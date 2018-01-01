@@ -17,7 +17,7 @@
 <h1> User Sign Up</h1>
 
 <h1>Registration Form</h1>
-<form action="register" method="post">
+<form action="register" method="post"  enctype="multipart/form-data">
     <table cellpadding="3pt">
         <tr>
             <td>User Name :</td>
