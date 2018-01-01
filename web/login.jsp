@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: imran
+  custom.bean.User: imran
   Date: 12/19/17
   Time: 1:59 PM
   To change this template use File | Settings | File Templates.
@@ -12,6 +12,7 @@
 </head>
 <body>
 <p style="color: red;">${errorMessage}</p><br><br>
+
 <form action="/success" method="post">
 
     <div>
@@ -27,5 +28,6 @@
     </div>
 
 </form>
+<p><a href="registration.jsp">not yet register?</a> </p>
 </body>
 </html>

@@ -1,4 +1,7 @@
+package Controller;
 
+import custom.bean.User;
+import custom.services.UserDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -6,7 +9,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "UserListController", urlPatterns = "/userlist")
+@WebServlet(name = "Controller.UserListController", urlPatterns = "/userlist")
 public class UserListController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request,

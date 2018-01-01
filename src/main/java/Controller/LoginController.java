@@ -1,11 +1,14 @@
-import javax.persistence.Persistence;
+package Controller;
+
+import custom.bean.User;
+import custom.services.UserDao;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet(name = "LoginController", urlPatterns = "/success")
+@WebServlet(name = "Controller.LoginController", urlPatterns = "/success")
 public class LoginController extends HttpServlet {
 
     @Override

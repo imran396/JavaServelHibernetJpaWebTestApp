@@ -1,3 +1,5 @@
+package Controller;
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -29,7 +31,7 @@ public class LogoutController extends HttpServlet {
         }
         //invalidate the session if exists
         HttpSession session = request.getSession(false);
-        System.out.println("User="+session.getAttribute("user"));
+        System.out.println("custom.bean.User="+session.getAttribute("user"));
         if(session != null){
             session.invalidate();
         }

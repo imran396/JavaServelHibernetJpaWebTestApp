@@ -1,3 +1,6 @@
+package Controller;
+
+import custom.services.UserDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -36,7 +39,6 @@ public class RegisterController extends HttpServlet {
 
             e.printStackTrace();
         }
-
     }
 
 }

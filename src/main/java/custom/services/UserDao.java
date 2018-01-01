@@ -1,3 +1,7 @@
+package custom.services;
+
+import custom.bean.User;
+
 import javax.persistence.*;
 import java.util.List;
 
