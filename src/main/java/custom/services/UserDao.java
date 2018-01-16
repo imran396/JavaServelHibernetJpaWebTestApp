@@ -47,7 +47,7 @@ public class UserDao {
     public User getUser(int user_id)
     {
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
-        User user = manager.find(User.class, 1);
+        User user = manager.find(User.class, user_id);
         return user;
     }
 

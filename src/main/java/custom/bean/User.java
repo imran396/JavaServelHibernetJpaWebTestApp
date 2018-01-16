@@ -1,9 +1,6 @@
 package custom.bean;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -11,6 +8,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     @Id
     @Column(name = "id",unique = true)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
     @Column(name="userName",nullable = false)
     private String userName;
@@ -22,6 +20,8 @@ public class User implements Serializable {
     private String phone;
     @Column(name="city",nullable = true)
     private String city;
+    @Column(name="road",nullable = true)
+    private String road;
 
     public int getId() {
         return id;
@@ -71,4 +71,11 @@ public class User implements Serializable {
         this.city = city;
     }
 
+    public String getRoad() {
+        return road;
+    }
+
+    public void setRoad(String road) {
+        this.road = road;
+    }
 }

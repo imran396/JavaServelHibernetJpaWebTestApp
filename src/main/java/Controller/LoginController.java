@@ -16,7 +16,7 @@ public class LoginController extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         UserDao userDAO = new UserDao();
-        User user = userDAO.getUser(3);
+        User user = userDAO.getUser(1);
         request.setAttribute("username",username);
         //Persistence.createEntityManagerFactory( "org.hibernate.tutorial.jpa" );
 

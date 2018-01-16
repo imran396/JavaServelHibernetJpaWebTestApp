@@ -7,15 +7,29 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Entity classes -->
         <class>custom.bean.User</class>
+        <class>custom.bean.Role</class>
+        <class>custom.bean.Permission</class>
+        <class>custom.bean.Teacher</class>
+        <class>custom.bean.Clas</class>
         <properties>
             <!-- The JDBC driver of your database -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <!-- The JDBC URL to the database instance -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/javahelps" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/uodaProject" />
             <!-- The database username -->
             <property name="javax.persistence.jdbc.user" value="root" />
             <!-- The database password -->
             <property name="javax.persistence.jdbc.password" value="a" />
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/uodaProject"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/uodaProject"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/uodaProject"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/uodaProject"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+
         </properties>
     </persistence-unit>
 </persistence>
